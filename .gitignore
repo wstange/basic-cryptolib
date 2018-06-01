@@ -1,0 +1,4 @@
+#specify all the directories and files which are not pushed to github
+test/
+.idea/ #only needed for pycharm IDE
+doc/
