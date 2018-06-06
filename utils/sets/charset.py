@@ -1,0 +1,1 @@
+# ideas: 1) ring-charsets, 2) ascii/unicode charsets
