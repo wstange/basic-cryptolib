@@ -1,4 +1,5 @@
 import random
+from utils.arithmetic.common import gcd
 
 
 ##
@@ -23,6 +24,8 @@ def millerrabin(n, rounds=128):
 	k = 0
 	while k < rounds:
 		a = random.randint(2, n - 1)
+		if gcd(a, n) == 1:
+			return False
 		v = pow(a, s, n)
 		if v != 1:
 			i = 0
@@ -35,5 +38,3 @@ def millerrabin(n, rounds=128):
 		k += 2
 
 	return True
-
-
