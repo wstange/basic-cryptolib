@@ -7,7 +7,6 @@ from utils.arithmetic.common import gcd
 #
 #   @params n       Number to test
 #   @params rounds  Number of rounds to test
-
 def millerrabin(n, rounds=128):
 	# n have to be odd and greater 2
 	if n & 1 == 0 or n <= 2:
